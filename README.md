@@ -12,13 +12,13 @@ The workflow was developed for enterprise utility GIS environments and demonstra
 - Automated reporting
 - Enterprise utility workflows
 
-The system connects to ArcGIS feature classes, validates customer records, retrieves endpoint and consumption data from Neptune servers, aligns the data with GIS accounts, and exports automated water consumption reports distributed through email automation.
+The system connects to GIS feature classes, validates customer records, retrieves endpoint and consumption data from Neptune servers, aligns the data with GIS accounts, and exports automated water consumption reports distributed through email automation.
 
 ---
 
 # System Architecture
 
-The workflow architecture follows the Neptune API Water Consumption Flow Diagram and includes:
+The workflow architecture includes:
 - GIS local database integration
 - Token authentication workflow
 - Endpoint request processing
@@ -115,7 +115,7 @@ The script exports structured water consumption reports containing:
 Example output:
 ```text
 AccountNumber   Address                Meter      MIU      ReadingDate        Consumption
-00012345        123 MAIN ST            456789     123456   2026-05-01         450
+0001234        123 MAIN ST            456789     123456   2026-05-01         450
 ```
 
 ---
@@ -158,29 +158,74 @@ The application was designed to process large utility datasets efficiently throu
 
 # Technologies Used
 
-## Programming Language
-- Python
+## Programming Languages
+- Python 2.7 / Python 3
+- SQL
+- JavaScript
+- TypeScript
 
 ## GIS Technologies
-- ArcPy
 - ArcGIS Desktop
-- ArcGIS File Geodatabases
+- ArcGIS Pro
+- ArcPy
+- File Geodatabases
+- Enterprise Geodatabases (SDE)
+- ArcPy
+- ArcGIS REST API
 
-## APIs
+## APIs & Integrations
 - Neptune API
+- AWS API Gateway
+- RESTful API Integration
+- ArcGIS REST Services
+- SMTP Email Services
+- Customer Information System (CIS) Integration
+
+Integrated with Neptune smart meter services exposed through AWS API Gateway.
+
+## Databases
+- SQL Server
+- Enterprise Geodatabases (SDE)
+- File Geodatabases
+
+## Cloud & Infrastructure
+- AWS API Gateway
+- REST API Integration
+- Windows Server Environment
+- Enterprise GIS Environment
 
 ## Python Libraries
 ```python
+arcpy
 requests
 requests_cache
 pandas
 tqdm
+json
 datetime
 dateutil
-json
 smtplib
-arcpy
+os
+math
+collections
 ```
+
+## Development & Automation
+- Git
+- GitHub
+- RESTful API Automation
+- Batch Processing
+- Scheduled Task Automation
+- Enterprise GIS Automation
+- Data Processing Pipelines
+
+## Data Processing & Reporting
+- Smart Meter Analytics
+- Water Consumption Reporting
+- Automated Report Generation
+- GIS Data Validation
+- Spatial Data Processing
+- Consumption Trend Analysis
 
 ---
 
@@ -268,45 +313,39 @@ Completed reports are automatically emailed to utility personnel.
 
 ---
 
-# Folder Structure
+# Recommended Folder Structure
 
 ```text
 project/
 │
-├── Neptune_Project_FINAL2.py
-├── Neptune_Water_Consumption_flowchart1.pdf
-├── account.txt
-├── address.txt
-├── Narcoossee_IR_Meters.csv
 ├── README.md
+├── requirements.txt
+├── .gitignore
+├── LICENSE
 │
-├── outputs/
-│   └── Water_Consumption_Report_YYYY-MM-DD.txt
+├── src/
+│   ├── Neptune_Project_FINAL2.py
+│   ├── api/
+│   ├── gis/
+│   ├── reporting/
+│   ├── utils/
+│   └── config/
 │
-└── logs/
+├── data/
+│   ├── input/
+│   ├── temp/
+│   └── output/
+│
+├── diagrams/
+│
+├── logs/
+│
+├── docs/
+│
+├── screenshots/
+│
+└── tests/
 ```
-
----
-
-# Key Classes & Components
-
-## GIS Processing
-- `filter_saintcloud_records`
-- `filter_records`
-- `Check_file`
-
-## API Communication
-- `get_responses`
-- `post_endpoints`
-- `post_water_comsumption`
-
-## Data Processing
-- `get_chunks_data`
-- `json_convertion`
-
-## Reporting
-- `send_email`
-- `export_data`
 
 ---
 
@@ -370,7 +409,7 @@ The script includes:
 
 ## Michael Nkum
 
-GIS Developer | ArcGIS Automation | Python Development | Utility GIS Solutions
+GIS Developer | ArcGIS Automation | Utility GIS | Python Development
 
 ---
 
@@ -387,6 +426,7 @@ water-utilities
 api-integration
 automation
 smart-meter
+utility-network
 geospatial-analysis
 ```
 
