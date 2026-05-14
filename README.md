@@ -401,6 +401,7 @@ The script includes:
 - Dashboard reporting
 - Multiprocessing support
 - Logging framework integration
+- Azure Cloud Deployment
 
 ---
 
