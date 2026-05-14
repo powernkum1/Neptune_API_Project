@@ -400,7 +400,6 @@ The script includes:
 - ArcGIS Enterprise integration
 - Dashboard reporting
 - Multiprocessing support
-- Cloud deployment
 - Logging framework integration
 
 ---
@@ -408,8 +407,6 @@ The script includes:
 # Author
 
 ## Michael Nkum
-
-GIS Developer | ArcGIS Automation | Utility GIS | Python Development
 
 ---
 
