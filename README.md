@@ -161,8 +161,6 @@ The application was designed to process large utility datasets efficiently throu
 ## Programming Languages
 - Python 2.7 / Python 3
 - SQL
-- JavaScript
-- TypeScript
 
 ## GIS Technologies
 - ArcGIS Desktop
